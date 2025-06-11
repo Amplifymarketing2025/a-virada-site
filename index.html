@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Virada – Do Prejuízo ao Lucro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: black;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img.logo {
+      max-width: 400px;
+      margin-bottom: 0px;
+    }
+    
+    .hero {
+      background-image: url('evento-imagem.png');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero img.titulo-imagem {
+      max-width: 300%;
+      border: radius 10px; ;
+      box-shadow: 0 0 10px rgba(255, 255, 25h5, 0.2);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      background: #FFD700;
+      color: #000;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .video, .gallery {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .video iframe, .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .countdown-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+    #countdown {
+      font-size: 28px;
+      font-weight: bold;
+      color: #FFD700;
+      background: #222;
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      margin-top: 15px;
+    }
+    .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  .whatsapp-float img {
+  width: 40px;
+  height: 40px;
+  .animation: pulse 2s infinite;
+    cursor: pointer;}
+  .whatsapp-float img:
+   {
+    transform: scale(1.1);
+  }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(199, 211, 37, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+
+}
+
+.whatsapp-float p {
+  background-color: #d3cd25;
+  color: #000000;
+  padding: 3px 5px;
+  border-radius: 6px 6px 0 0;
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+}
+  </style>
+  <script>
+    const targetDate = new Date("2025-06-25T00:00:00").getTime();
+    const countdownInterval = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "O evento começou!";
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+  </body>
+  
+</head>
+<body>
+<header>
+  <img src="logo-a-virada.png" alt="Logo A Virada" class="logo">
+</header>
+
+<div class="hero">
+  <img src="img-titulo.png" alt="A Virada – Do Prejuízo ao Lucro" class="titulo-imagem">
+</div>
+
+<section>
+  <h2 style="text-align: center;">Participe da 2ª edição do maior evento de transformação empresarial</h2>
+  <p style="text-align: center;">Três encontros intensivos em Passos/MG: 25/06, 02/07 e 09/07</p>
+
+  <div class="cta">
+    <a href="https://www.even3.com.br/a-virada-2-edicao-588484/" target="_blank">Inscreva-se agora</a>
+  </div>
+  <div class="topics">
+    <h3 style="text-align: center; margin-top: 40px; color: #FFD700;">O que você vai aprender:</h3>
+    <ul style="list-style: none; padding: 0; text-align: left; max-width: 700px; margin: 30px auto;">
+      <li><strong>1º Encontro (25/06):</strong> Como identificar os principais gargalos financeiros e operacionais do seu negócio.</li>
+      <li><strong>2º Encontro (02/07):</strong> Estratégias práticas de gestão e liderança para escalar com lucro.</li>
+      <li><strong>3º Encontro (09/07):</strong> Criação de planos de ação com metas reais para sair do prejuízo e manter o crescimento sustentável.</li>
+    </ul>
+    <div class="benefits" style="margin-top: 40px;">
+      <h3 style="text-align: center; color: #FFD700;">Benefícios ao participar</h3>
+      <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; text-align: left;">
+        <li>✔ Networking com empresários e líderes da região</li>
+        <li>✔ Acesso a ferramentas e estratégias aplicáveis no seu negócio</li>
+        <li>✔ Participação em uma comunidade ativa de crescimento</li>
+        <li>✔ Certificado de participação</li>
+      </ul>
+    </div>
+  
+    <div class="urgency" style="margin-top: 40px; text-align: center;">
+      <p style="color: #FFD700; font-weight: bold; font-size: 18px;">
+        ⚠ Restam poucas vagas! Garanta a sua agora!
+      </p>
+      <div class="countdown-container">
+        <p id="countdown"></p>
+      </div>
+    </div>
+  </div>
+  <div class="video">
+    <div class="video">
+      <div class="video">
+      <video controls>
+        <source src="VID-20250611-WA0001.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo.
+      </video>
+      <video controls>
+        <source src="VID-20250611-WA0009 - Copia.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo.
+      </video>
+      <video controls>
+        <source src="VID-20250611-WA0015.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo.
+      </video>
+    </div>
+
+
+  <div class="gallery">
+    <img src="foto-edicao-anterior1.jpg" alt="Edição anterior 1">
+    <img src="foto-edicao-anterior2.jpg" alt="Edição anterior 2">
+    <img src="foto-edicao-anterior3.jpg" alt="Edição anterior 3">
+  </div>
+</section>
+<a href="https://chat.whatsapp.com/GUanmbLnscnL3WPwDlAgcP" class="whatsapp-float" target="_blank">
+  <p>Entre para nossa comunidade!</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+</a>
+<footer style="background-color: #111; text-align: center; padding: 20px; color: #888; font-size: 14px;">
+  © 2025 A Virada – Todos os direitos reservados.
+  <div style="margin-top: 10px;">
+    <a href="https://instagram.com/aviradaevento" target="_blank" style="color: #FFD700; text-decoration: none;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 20px; vertical-align: middle; margin-right: 6px;">
+      @aviradaevento
+    </a>
+  </div>
+</footer>
+</body>
+</html>
